@@ -18,3 +18,10 @@ def max_of_two( a, b ):
 def max_of_three( a, b, c ):
     return max_of_two( a, max_of_two( b, c ) )
 print(max_of_three(10, 20, 30))
+
+#DEF, arguments, docstring
+def sum_numbers(*numbers: tuple) -> float:
+    """Sum numbers"""
+    return sum(numbers)
+
+print(sum_numbers(1, 2, 3, 4, 5))
