@@ -9,3 +9,12 @@ print (txt)
 #Write a Python program to reverse a string.
 string=("1234abcd") [::-1]
 print(string)
+
+#Write a Python function to find the Max of three numbers.
+def max_of_two( a, b ):
+    if a > b:
+        return a
+    return b
+def max_of_three( a, b, c ):
+    return max_of_two( a, max_of_two( b, c ) )
+print(max_of_three(10, 20, 30))
