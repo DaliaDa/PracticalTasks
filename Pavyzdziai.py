@@ -1,3 +1,4 @@
+#Infinite while loop
 while True:
     password = input('Enter your password: ')
 
@@ -10,7 +11,7 @@ while True:
 
 print(password)
 
-#kitas pavyzdys su apibudinimais
+#Nested loop kitas pavyzdys su apibudinimais
 adj = ["red", "big", "tasty"]
 fruits = ["apple", "banana", "cherry"]
 
