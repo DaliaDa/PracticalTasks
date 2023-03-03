@@ -18,3 +18,15 @@ fruits = ["apple", "banana", "cherry"]
 for x in adj:
     for y in fruits:
         print(x, y)
+
+  # SLICING
+        b ="Hello, World!"
+print(b[2:5])
+
+b ="Hello, World!"
+print(b[:5])
+
+b ="Hello, World!"
+print(b[2:])
+
+#printed llo, tada Hello ir galiausiai llo, World
