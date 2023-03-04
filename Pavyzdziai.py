@@ -30,3 +30,13 @@ b ="Hello, World!"
 print(b[2:])
 
 #printed llo, tada Hello ir galiausiai llo, World
+
+
+#arguments, returning values
+def my_function(number):
+    if number > 5:
+        return "Value is correct: " + str(number)
+    else:
+        return "Value is incorrect:" + str(number)
+print("===========")
+print(my_function(2))
