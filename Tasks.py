@@ -25,3 +25,11 @@ def sum_numbers(*numbers: tuple) -> float:
     return sum(numbers)
 
 print(sum_numbers(1, 2, 3, 4, 5))
+
+#Write a Python program to subtract five days from the current date.
+
+x = input ("Enter your name: ")
+from datetime import date, timedelta
+dt = date.today() - timedelta(5)
+print('Hello, ', x,',', ' today is: ', date.today(), sep='')
+print('5 days ago was:',dt)
