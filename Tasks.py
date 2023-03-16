@@ -33,3 +33,27 @@ from datetime import date, timedelta
 dt = date.today() - timedelta(5)
 print('Hello, ', x,',', ' today is: ', date.today(), sep='')
 print('5 days ago was:',dt)
+
+#Practical task (Audit system)
+
+import os
+from datetime import date
+
+name = input("Type the name here: ")
+surname = input("Type the surname here: ")
+id = input("Type the ID number here: ")
+
+currentDate = date.today().strftime("%Y-%m-%d")
+folder = os.path.join(os.getcwd(), currentDate)
+if not os.path.exists(folder):
+    os.makedirs(folder)
+else:
+    print("File located in existing folder", {os.path.join(os.getcwd(), currentDate)})
+
+fileInFolder = os.path.join(folder, f"{id}.txt")
+with open(fileInFolder, "w") as f:
+    f.write(f"{name} {surname}, {id}")
+
+for fileInFolder in os.listdir(folder):
+    with open(os.path.join(folder, fileInFolder), "r") as f:
+        print(f.readlines())
